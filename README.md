@@ -89,7 +89,7 @@ git clone https://github.com/Iggys4ur/marketing-musings.git <PATH_TO_DESTINATION
 GitHub Repo
 - https://github.com/Iggys4ur/marketing-musings
 
-Hosted Webpage
+Deployed WebApp
 - https://iggys4ur.github.io/marketing-musings
 
 <details>
@@ -100,7 +100,6 @@ Hosted Webpage
 
 ![Screenshot of the landing page](/assets/img/screenshot-home.png)
 
-<p>&nbsp;</p>
 <p>And here is a screenshot of the posts page:</p>
 
 ![Screenshot of the posts page](/assets/img/screenshot-posts.png)
