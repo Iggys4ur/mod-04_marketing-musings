@@ -1,5 +1,5 @@
-# Marketing Musings
-A personal blog page tailored to marketing students
+# [Module 4] Marketing Musings
+A personal blog page tailored to marketing students - for RU Full Stack Coding Bootcamp 6/2024
 
 ## What I Learned From This Project
 Developing this personal blog provided hands-on experience with:
