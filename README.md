@@ -1,4 +1,4 @@
-# Marketing Musings
+# [Module 4] Marketing Musings
 A personal blog page tailored to marketing students
 
 ## What I Learned From This Project
