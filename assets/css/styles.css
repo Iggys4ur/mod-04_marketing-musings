@@ -1,0 +1,124 @@
+/* styles.css: General styles for the site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    /* Deep gray-blue color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #2c3e50;
+    /* Deep gray-blue color to match header */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 50px;
+    /* To prevent overlap with fixed footer */
+}
+
+/* Post styles for light mode */
+.post {
+    background-color: #ffffff;
+    /* White background for light mode */
+    color: #333;
+    /* Dark text for readability */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /* Light gray border to create a box effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow for depth */
+}
+
+/* Button styles for light mode */
+button {
+    background-color: #007BFF;
+    /* Blue background for buttons */
+    color: #fff;
+    /* White text for contrast */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Link styles for light mode */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #2c3e50;
+    /* Maintain the deep gray-blue color */
+}
+
+body.dark-mode button {
+    background-color: #0056b3;
+    /* Blue background for dark mode buttons */
+    color: #fff;
+    /* White text for contrast */
+}
+
+body.dark-mode button:hover {
+    background-color: #003f7f;
+    /* Darker blue on hover */
+}
+
+body.dark-mode a {
+    color: #1e90ff;
+}
+
+body.dark-mode a:hover {
+    color: #6495ed;
+}
+
+body.dark-mode .post {
+    background-color: #444;
+    /* Slightly lighter than the dark mode background */
+    color: #f4f4f4;
+    /* Light color for text */
+    border: 1px solid #555;
+    /* Border to distinguish posts */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth in dark mode */
+}
+
+body.dark-mode h2,
+body.dark-mode p {
+    color: #f4f4f4;
+    /* Ensure headers and paragraphs are visible */
+}
