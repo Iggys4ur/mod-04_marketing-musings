@@ -47,7 +47,31 @@ main {
     /* Subtle shadow for depth */
 }
 
-/* Button styles for light mode */
+/* Form styles for light mode */
+form {
+    background-color: #ffffff;
+    /* White background for light mode */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
 button {
     background-color: #007BFF;
     /* Blue background for buttons */
@@ -86,6 +110,41 @@ body.dark-mode footer {
     /* Maintain the deep gray-blue color */
 }
 
+body.dark-mode .post {
+    background-color: #444;
+    /* Slightly lighter than the dark mode background */
+    color: #f4f4f4;
+    /* Light color for text */
+    border: 1px solid #555;
+    /* Border to distinguish posts */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth in dark mode */
+}
+
+body.dark-mode form {
+    background-color: #444;
+    /* Dark gray background for the form */
+    color: #f4f4f4;
+    /* Light color for text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth in dark mode */
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode textarea {
+    background-color: #555;
+    /* Darker gray for input fields */
+    color: #f4f4f4;
+    /* Light text color for readability */
+    border: 1px solid #666;
+    /* Border for input fields */
+}
+
+body.dark-mode label {
+    color: #f4f4f4;
+    /* Light color for labels */
+}
+
 body.dark-mode button {
     background-color: #0056b3;
     /* Blue background for dark mode buttons */
@@ -104,17 +163,6 @@ body.dark-mode a {
 
 body.dark-mode a:hover {
     color: #6495ed;
-}
-
-body.dark-mode .post {
-    background-color: #444;
-    /* Slightly lighter than the dark mode background */
-    color: #f4f4f4;
-    /* Light color for text */
-    border: 1px solid #555;
-    /* Border to distinguish posts */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Slight shadow for depth in dark mode */
 }
 
 body.dark-mode h2,

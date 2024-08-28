@@ -1,4 +1,3 @@
-/* blog.js: Manages display of posts and light/dark mode toggle */
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('theme-toggle');
     const postsContainer = document.getElementById('posts-container');
@@ -16,17 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Ensure postsContainer is present and then retrieve and display posts
     if (postsContainer) {
         const posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-        posts.forEach(post => {
-            const postElement = document.createElement('div');
-            postElement.classList.add('post');
-            postElement.innerHTML = `
-                <h2>${post.title}</h2>
-                <p>${post.content}</p>
-                <p><em>by ${post.username}</em></p>
-            `;
-            postsContainer.appendChild(postElement);
-        });
+        if (posts.length === 0) {
+            postsContainer.innerHTML = '<p>No blog posts available. Create a new one!</p>';
+        } else {
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.classList.add('post');
+                postElement.innerHTML = `
+                    <h2>${post.title}</h2>
+                    <p>${post.content}</p>
+                    <p><em>by ${post.username}</em></p>
+                `;
+                postsContainer.appendChild(postElement);
+            });
+        }
     }
 });
